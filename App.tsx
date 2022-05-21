@@ -23,6 +23,7 @@ const theme = extendTheme({
     orangish: "#fa7745",
     maize: "#f3c442",
     greyishBrown: "#434343",
+    confirm: "#11ce90",
   },
   fontConfig: {
     ProximaNovaAlt: {
