@@ -3,10 +3,27 @@ import React from "react";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { Box, Button, FormControl, Input, Text, VStack } from "native-base";
 import { RootStackParamList } from "../types";
+import { useForm } from "react-hook-form";
+
+type FormFields = {
+  email: string;
+  password: string;
+};
 
 type Props = NativeStackScreenProps<RootStackParamList, "LoginEmailScreen">;
 
 export default function LoginEmailScreen({ route, navigation }: Props) {
+  const {
+    control,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<FormFields>({
+    defaultValues: {
+      email: "",
+      password: "",
+    },
+  });
+
   return (
     <Box
       bg={{
