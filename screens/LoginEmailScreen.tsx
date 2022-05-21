@@ -4,7 +4,6 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { Box, Button, FormControl, Input, Text, VStack } from "native-base";
 import { RootStackParamList } from "../types";
 
-
 type Props = NativeStackScreenProps<RootStackParamList, "LoginEmailScreen">;
 
 export default function LoginEmailScreen({ route, navigation }: Props) {
