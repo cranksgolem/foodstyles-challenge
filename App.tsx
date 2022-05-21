@@ -11,6 +11,8 @@ import StartScreen from './screens/StartScreen';
 import { useFonts } from 'expo-font';
 import SignupEmailScreen from './screens/SignupEmailScreen';
 import { RootStackParamList } from './types';
+import LoginEmailScreen from './screens/LoginEmailScreen';
+import ProfileSettingsScreen from './screens/ProfileSettingsScreen';
 
 const config = {
   dependencies: {
@@ -24,6 +26,9 @@ const theme = extendTheme({
     maize: "#f3c442",
     greyishBrown: "#434343",
     confirm: "#11ce90",
+    danger: "#f13838",
+    customWhite: "#f8f8f8",
+    secondaryButton: "#ececec",
   },
   fontConfig: {
     ProximaNovaAlt: {
@@ -71,6 +76,8 @@ export default function App() {
           >
             <Stack.Screen name="StartScreen" component={StartScreen} />
             <Stack.Screen name="SignupEmailScreen" component={SignupEmailScreen} />
+            <Stack.Screen name="LoginEmailScreen" component={LoginEmailScreen} />
+            <Stack.Screen name="ProfileSettingsScreen" component={ProfileSettingsScreen} />
           </Stack.Navigator>
         </NavigationContainer>
       </NativeBaseProvider>

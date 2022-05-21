@@ -49,7 +49,7 @@ export default function StartScreen({ route, navigation }: Props) {
           <Button
             rounded="full"
             background="white"
-            shadow="1"
+            shadow="2"
             leftIcon={
               <Image
                 source={require("../assets/images/Apple-logo.png")}
@@ -72,7 +72,7 @@ export default function StartScreen({ route, navigation }: Props) {
           <Button
             rounded="full"
             background="white"
-            shadow="1"
+            shadow="2"
             leftIcon={
               <Image
                 source={require("../assets/images/Facebook-icon.png")}
@@ -95,7 +95,7 @@ export default function StartScreen({ route, navigation }: Props) {
           <Button
             rounded="full"
             background="white"
-            shadow="1"
+            shadow="2"
             leftIcon={
               <Image
                 source={require("../assets/images/Google-icon.png")}
@@ -118,7 +118,7 @@ export default function StartScreen({ route, navigation }: Props) {
           <Button
             rounded="full"
             background="white"
-            shadow="1"
+            shadow="2"
           >
             <Text
               fontFamily="body"
@@ -141,6 +141,7 @@ export default function StartScreen({ route, navigation }: Props) {
               color="white"
               fontSize="md"
               mt="-2"
+              onPress={() => navigation.navigate("LoginEmailScreen")}
             >
               Log in with Email
             </Text>
